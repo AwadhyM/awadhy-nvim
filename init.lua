@@ -1,3 +1,5 @@
+require "options" -- Load the contents of the options file that is located in lua/options
+
 vim.cmd.colorscheme('default')
 
 -- Lazy.nvim Plugin Manager
