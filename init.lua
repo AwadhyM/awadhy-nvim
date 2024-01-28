@@ -16,8 +16,6 @@ if not vim.loop.fs_stat(lazypath) then -- if path does not exist on file then...
 end
 vim.opt.rtp:prepend(lazypath) -- add the path to the front of the vim run time path. (List of paths accessible to neovim)
 
-require('lazy').setup({
-  {'rebelot/kanagawa.nvim'},
-})
+require "plugins"
 
 vim.cmd.colorscheme('kanagawa')
