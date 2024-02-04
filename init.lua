@@ -17,5 +17,6 @@ end
 vim.opt.rtp:prepend(lazypath) -- add the path to the front of the vim run time path. (List of paths accessible to neovim)
 
 require "plugins"
+require "mappings"
 
 vim.cmd.colorscheme('kanagawa')
