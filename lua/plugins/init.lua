@@ -1,8 +1,9 @@
 require('lazy').setup({
-  {'rebelot/kanagawa.nvim',
-	config = function()
-		vim.cmd 'colorscheme kanagawa-wave'
-	end,
+ 	-- Additional color scheme install
+	{'rebelot/kanagawa.nvim'
+	--config = function()
+	--	vim.cmd 'colorscheme kanagawa-wave'
+	--end,
   },
 
   -- Treesitter
@@ -15,6 +16,10 @@ require('lazy').setup({
 	config = function()
 		local lspconfig = require("lspconfig")
 		lspconfig.clangd.setup({
+		})
+		lspconfig.lua_ls.setup({
+		})
+		lspconfig.pyright.setup({
 		})
 	end,
 	},
