@@ -17,7 +17,8 @@ require('lazy').setup({
 		local lspconfig = require("lspconfig")
 		lspconfig.clangd.setup({})
 		lspconfig.lua_ls.setup({})
-		lspconfig.pyright.setup({
+		lspconfig.pyright.setup({})
+		lspconfig.lua_ls.setup({
 			settings = {
 					Lua = {
 						diagnostics = {
