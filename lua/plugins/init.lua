@@ -15,11 +15,16 @@ require('lazy').setup({
    {'neovim/nvim-lspconfig',
 	config = function()
 		local lspconfig = require("lspconfig")
-		lspconfig.clangd.setup({
-		})
-		lspconfig.lua_ls.setup({
-		})
+		lspconfig.clangd.setup({})
+		lspconfig.lua_ls.setup({})
 		lspconfig.pyright.setup({
+			settings = {
+					Lua = {
+						diagnostics = {
+							globals = { 'vim' }
+						}
+					}
+				}
 		})
 	end,
 	},
