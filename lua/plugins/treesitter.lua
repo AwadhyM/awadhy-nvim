@@ -1,4 +1,7 @@
-require("nvim-treesitter.configs").setup {
+return {
+	'nvim-treesitter/nvim-treesitter',
+	config = function()
+	require('nvim-treesitter.configs').setup({
 	ensure_installed = {"c", "cpp", "lua", "vim", "vimdoc", "python"},
 	auto_install = true,
 	highlight = {
@@ -13,4 +16,6 @@ require("nvim-treesitter.configs").setup {
       node_decremental = "<leader>nd",
     },
   },
+})
+end
 }
