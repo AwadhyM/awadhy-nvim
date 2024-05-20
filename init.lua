@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require "config.options" -- Load the contents of the options file that is located in lua/options
 require "config.mappings"
 
-vim.cmd "colorscheme default"
 vim.cmd "set relativenumber"
 require("lazy").setup("plugins")
-
+vim.cmd [[colorscheme dracula]]
