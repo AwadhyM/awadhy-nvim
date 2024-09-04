@@ -21,3 +21,6 @@ vim.opt.scrolloff = 999
 vim.opt.virtualedit = "block"
 
 vim.opt.termguicolors = true
+
+vim.opt.ignorecase = true -- Search becomes case insensitive by default
+vim.opt.smartcase = true -- Search becomes case sensitive if you use a capital letter
