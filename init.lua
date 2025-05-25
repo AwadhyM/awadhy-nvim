@@ -16,4 +16,4 @@ require "config.mappings"
 
 vim.cmd "set relativenumber"
 require("lazy").setup("plugins")
-vim.cmd [[colorscheme moonlight]]
+vim.cmd [[colorscheme everforest]]

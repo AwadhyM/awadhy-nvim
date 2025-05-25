@@ -5,6 +5,7 @@ return {
 		local lspconfig = require("lspconfig")
 		lspconfig.clangd.setup({ capabilities = capabilities})
 		lspconfig.pyright.setup({ capabilities = capabilities})
+		lspconfig.tsserver.setup({capabilities = capabilities})
 		lspconfig.lua_ls.setup({ capabilities = capabilities,
 			settings = {
 					Lua = {
